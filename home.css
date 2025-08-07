@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-image: url('bg.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  color: #333;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgb(199, 199, 199);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Ford's Folly";
+}
+
+.role {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  position: relative;
+}
+
+nav a:not(:last-child)::after {
+  content: "|";
+  margin-left: 15px;
+  color: #000000;
+}
+
+h2 {
+    font-family: "Brittany Signature";
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 50px;
+  flex-wrap: wrap;
+}
+
+.photo img {
+  width: 290px;
+  height: 300px;
+  object-fit: fill;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.intro-text {
+  max-width: 500px;
+  margin-left: 50px;
+}
+
+.intro-text h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.intro-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+div.buttons :hover {
+  background-color: transparent;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  padding: 20px 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+.btn.yellow {
+  background-color: #f4b400;
+}
+
+.btn.red {
+  background-color: #ff4e3c;
+}
+
+.btn.blue {
+  background-color: #83e1e2;
+}
+
+footer {
+  display: flex;
+  align-items: justify;
+  padding: 20px 50px;
+  background-color: rgb(199, 199, 199);
+  margin-top: 2.7%;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+}
+
+nav.foot {
+  margin-left: 10px;
+
+}
+
+.ph {
+  font-family: "Edu TAS Beginner";
+  font-size: 1.1rem;
+  margin-left: 5%;
+  line-height: 1.6;
+}
+
+.gmail {
+  font-family: "Edu TAS Beginner";
+  font-size: 1.1rem;
+  margin-left: 14.8%;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.link1 {
+  font-family: "Edu TAS Beginner";
+  font-size: 1.1rem;
+  margin-left: 13%;
+  line-height: 1.6;
+}
+
+.by {
+  font-family: "Edu TAS Beginner";
+  font-size: 1.1rem;
+  margin-left: 21.7%;
+  line-height: 1.6;
+}
